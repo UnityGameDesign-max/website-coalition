@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Montserrat:wght@300&display=swap');
+
+:root{
+    --color-primary: #414f6b;
+    --color-light: #ffffff;
+    --color-dark: black;
+    --color-secondary: #b0b4be;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1380px;
+    padding: 10px 0;
+}
+
+.hero{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.history{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.climb{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.history-title, 
+.climb-title, 
+.climb-container, 
+.navigation-mountains ul, 
+.schedules,
+.footer-container{
+    display: flex;
+}
+
+.history-title h1,
+.climb-title h1{
+    align-self: self-end;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: var(--color-primary);
+    left: -20px;
+}
+
+.history-paragraph {
+    font-weight: 600;
+    margin-left: 4.2em;
+}
+
+body section:nth-child(1){
+    background-image: url('./assets/coalitionHero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .history-image{
+    background-image: url('./assets/heroSection2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 4em - 1em);
+}
+
+.climb .mountain-bg{
+    background-image: url('./assets/mountainbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 2em - 10px)
+}
+
+
+.spacing-y-10{
+    padding-block: 1em;
+}
+.moving-top-50{
+    margin-top: 5em;
+}
+.spacing-y-40{
+    padding-block: 4em;
+}
+.spacing-y-20{
+    padding-block: 2em;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li .dark{
+    color: var(--color-primary);
+
+}
+.navigation ul li .light{
+    color: var(--color-light);
+}
+.navigation ul li .dark,
+.navigation ul li .light{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.navigation ul li, .navigation-mountains ul li{
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.piece-image{
+    background-image: url('./assets/pieceMountain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    position: relative;
+    top: -160px;
+    background-color: var(--color-primary);
+}
+
+.climb-paragraph{
+    align-self: center;
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+.mountain-schedules h3{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+.mountain-tabs{
+    background-color: var(--color-primary);
+}
+.mountain-tabs ul li a{
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+.mountain-schedules{
+    padding: 5px 40px;
+    background-color: var(--color-light);
+    opacity: 0.5;
+    width: 400px;
+}
+.schedules{
+    justify-content: space-between;
+}
+.schedules p{
+    font-weight: 500;
+}
+.-end{
+    margin-bottom: 0px;
+}
+.footer{
+    background-color: var(--color-primary);
+    position: relative;
+    top: -30px;
+    padding-block: 10px;
+}
+.footer-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container p{
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+.carousel-cell::before{
+    display: block;
+}
